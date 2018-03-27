@@ -27,7 +27,7 @@ local function PriceOfMovie( event )
 	local day = instructionTextField.text
 	local age = tonumber(instruction2TextField.text)
 
-	if (day == "Tuesday" or day == "Thuesday") and (age >= 12 or age <= 21) then
+	if (day == "Tuesday" or day == "Thursday") or (age > 12 and age < 21) then
 		 answer.text = ("You can get a student price.")
 	else 
 		answer.text = ("You can get a regular price.")
